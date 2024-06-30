@@ -3,4 +3,8 @@ project(DNSrelay)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(DNSrelay main.c)
+add_executable(DNSrelay main.c
+        DNS_msg.c
+        DNS_msg.h
+        Thread_pool.c
+        Thread_pool.h)

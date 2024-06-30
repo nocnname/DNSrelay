@@ -55,6 +55,18 @@ build CMakeFiles/DNSrelay.dir/main.c.obj: C_COMPILER__DNSrelay_unscanned_Debug D
   OBJECT_DIR = CMakeFiles\DNSrelay.dir
   OBJECT_FILE_DIR = CMakeFiles\DNSrelay.dir
 
+build CMakeFiles/DNSrelay.dir/DNS_msg.c.obj: C_COMPILER__DNSrelay_unscanned_Debug D$:/CLion$ 2024.1.4/Clion_projects/DNSrelay/DNS_msg.c || cmake_object_order_depends_target_DNSrelay
+  DEP_FILE = CMakeFiles\DNSrelay.dir\DNS_msg.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\DNSrelay.dir
+  OBJECT_FILE_DIR = CMakeFiles\DNSrelay.dir
+
+build CMakeFiles/DNSrelay.dir/Thread_pool.c.obj: C_COMPILER__DNSrelay_unscanned_Debug D$:/CLion$ 2024.1.4/Clion_projects/DNSrelay/Thread_pool.c || cmake_object_order_depends_target_DNSrelay
+  DEP_FILE = CMakeFiles\DNSrelay.dir\Thread_pool.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\DNSrelay.dir
+  OBJECT_FILE_DIR = CMakeFiles\DNSrelay.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target DNSrelay
@@ -63,7 +75,7 @@ build CMakeFiles/DNSrelay.dir/main.c.obj: C_COMPILER__DNSrelay_unscanned_Debug D
 #############################################
 # Link the executable DNSrelay.exe
 
-build DNSrelay.exe: C_EXECUTABLE_LINKER__DNSrelay_Debug CMakeFiles/DNSrelay.dir/main.c.obj
+build DNSrelay.exe: C_EXECUTABLE_LINKER__DNSrelay_Debug CMakeFiles/DNSrelay.dir/main.c.obj CMakeFiles/DNSrelay.dir/DNS_msg.c.obj CMakeFiles/DNSrelay.dir/Thread_pool.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\DNSrelay.dir
